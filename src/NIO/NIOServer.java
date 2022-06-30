@@ -19,7 +19,7 @@ public class NIOServer {
 
         //得到一个selector对象
         Selector selector = Selector.open();
-        //把服务端serverSocketChannel注册到selector，关心时间为op_Accept
+        //把服务端serverSocketChannel注册到selector，关心事件为op_Accept
         serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
 
         //循环等待，等待客户端链接

@@ -22,7 +22,7 @@ public class ChannelCase2 {
 
         while (true){
 
-            //必须对这个buffer执行clear，否则循环将不会退出
+            //必须对这个buffer执行clear，也就是对标志重置，否则循环将不会退出
             buffer.clear();
 
             int read = channel1.read(buffer);
